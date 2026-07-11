@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# emily-portfolio
+
+Built with Next.js (App Router) and TypeScript, styled with CSS Modules.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16** (App Router) + **TypeScript**
+- **CSS Modules** for component styling, Tailwind v4 wired up but mostly unused
+- **next/font/google**: Playfair Display (headings/name), Hanken Grotesk (body), IBM Plex Mono (tags/labels), Caveat (handwritten accents)
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    page.tsx            home (Nav + Hero + FeaturedProjects)
+    work/page.tsx        project list
+    about/page.tsx       about page
+    writing/page.tsx     blog (not built yet — nav links to "under construction")
+    globals.css          site-wide tokens, keyframes, base styles
+    shared.module.css     shared page layout styles (about/work)
+  components/
+    Nav.tsx               site-wide nav bar
+    Hero.tsx              homepage hero (name, cloud + "hi!" stickers)
+    FeaturedProjects.tsx   homepage project cards
+    UnderConstruction.tsx  shared "not ready yet" modal, used by nav links
+                            without a real destination (play, blog)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`DraggableBlocks.tsx`, `SkillsCarousel.tsx`, and `ThemeToggle.tsx` are earlier
+homepage widgets that aren't wired into any page right now — left in place in
+case they get reused later.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploying
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on [Vercel](https://vercel.com) — connect the GitHub repo, Vercel
+auto-detects Next.js and redeploys on every push to the main branch.

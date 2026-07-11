@@ -1,0 +1,94 @@
+.nav {
+  position: relative;
+  background: #F6F2FC;
+  padding: 32px clamp(20px, 5vw, 56px);
+}
+
+.navInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrap {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 3px solid #2B1E42;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  color: #6B4FA0;
+  transform: rotate(-6deg);
+  box-shadow: 0 6px 14px rgba(80, 55, 130, 0.15);
+  transition: transform 0.25s ease;
+}
+
+.logoWrap:hover .logo {
+  transform: rotate(-2deg) scale(1.04);
+}
+
+.logoSparkle {
+  position: absolute;
+  right: -14px;
+  top: -8px;
+  font-size: 13px;
+  color: #A98FD6;
+  animation: twinkle 3.5s ease-in-out 0.5s infinite;
+}
+
+.logoDot {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #C9B4EA;
+}
+
+.navLinks {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks a,
+.navLinks button {
+  font-family: var(--font-hanken), 'Hanken Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #3E2C5C;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover,
+.navLinks button:hover {
+  color: #5D3E8E;
+}
+
+@media (max-width: 640px) {
+  .navLinks {
+    gap: 16px;
+  }
+  .navLinks a,
+  .navLinks button {
+    font-size: 14px;
+  }
+}

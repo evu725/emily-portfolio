@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  margin: 4px 0 44px;
+  user-select: none;
+}
+
+.hint {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--subtitle-color);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  cursor: grab;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.shape:hover {
+  filter: brightness(1.15);
+}
+
+.shape.active {
+  cursor: grabbing;
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}

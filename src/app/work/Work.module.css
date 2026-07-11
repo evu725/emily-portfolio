@@ -1,0 +1,96 @@
+.projectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  padding: 24px 0;
+  border-top: 1px solid rgba(93, 62, 142, 0.15);
+}
+
+.project:last-child {
+  border-bottom: 1px solid rgba(93, 62, 142, 0.15);
+}
+
+.projectTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.projectName {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.projectYear {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--subtitle-color);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+.projectDesc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--title-color);
+  opacity: 0.72;
+  margin-bottom: 12px;
+  max-width: 520px;
+}
+
+.projectMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.stack {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  color: var(--title-accent);
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.links {
+  display: flex;
+  gap: 14px;
+}
+
+.links a {
+  font-size: 12px;
+  color: var(--subtitle-color);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  transition: color 0.15s, opacity 0.15s;
+}
+
+.links a:hover {
+  color: var(--title-accent);
+  opacity: 1;
+}
+
+.back {
+  margin-top: 56px;
+}
+
+.back a {
+  font-size: 13px;
+  color: var(--subtitle-color);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.back a:hover {
+  color: var(--title-accent);
+  opacity: 1;
+}

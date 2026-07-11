@@ -1,0 +1,14 @@
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-icon);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: color 0.2s;
+}
+
+.toggle:hover {
+  color: var(--nav-link-hover);
+}
