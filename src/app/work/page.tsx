@@ -38,12 +38,8 @@ export default function WorkPage() {
         </header>
 
         <p className={styles.bio}>
-          A collection of projects I&rsquo;ve worked on &mdash; side projects, coursework,
-          and whatever I was curious about at the time. Source code is on{" "}
-          <a href="https://github.com/evu725" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>{" "}
-          for most of these.
+          A collection of projects I&rsquo;ve worked on: side projects, coursework,
+          and whatever I was curious about at the time.
         </p>
 
         <ul className={workStyles.projectList}>
