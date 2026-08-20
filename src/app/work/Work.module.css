@@ -41,7 +41,6 @@
   color: var(--title-color);
   opacity: 0.72;
   margin-bottom: 12px;
-  max-width: 520px;
 }
 
 .projectMeta {
