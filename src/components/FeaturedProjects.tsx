@@ -33,7 +33,7 @@ function GithubIcon() {
 
 export default function FeaturedProjects() {
   return (
-    <section className={styles.section}>
+    <section id="featured-projects" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
           <div className={styles.eyebrow}>01 — SELECTED WORKS</div>

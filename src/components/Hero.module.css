@@ -39,10 +39,69 @@
   margin: 36px 0 0;
 }
 
-.credentials {
-  font-size: 16px;
-  color: #8B7AAB;
-  margin: 8px 0 0;
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0 0;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  font-family: var(--font-hanken), 'Hanken Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.ctaPrimary {
+  background: #5D3E8E;
+  color: #F6F2FC;
+  box-shadow: 0 10px 24px rgba(93, 62, 142, 0.28);
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(93, 62, 142, 0.34);
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: #5D3E8E;
+  border: 1.5px solid rgba(93, 62, 142, 0.35);
+}
+
+.ctaSecondary:hover {
+  background: rgba(93, 62, 142, 0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .ctaRow {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.scrollDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 44px 0 0;
+  color: #C9B4EA;
+  transition: color 0.2s ease;
+}
+
+.scrollDown:hover {
+  color: #5D3E8E;
 }
 
 /* ── sparkles ── */
@@ -68,153 +127,8 @@
   animation-delay: 1s;
 }
 
-/* ── cloud sticker ── */
-.cloud {
-  position: absolute;
-  left: 140px;
-  top: 378px;
-  width: 124px;
-  height: 90px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.cloud:hover {
-  animation: cloudWiggle 0.6s ease-in-out;
-}
-
-.cloud:hover .cloudBody {
-  animation-play-state: paused;
-}
-
-.cloudBody {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  animation: floaty 5s ease-in-out infinite;
-}
-
-.cloudPart {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.cloudOutline1 { left: 0px; top: 26px; width: 58px; height: 58px; background: #2B1E42; }
-.cloudOutline2 { left: 28px; top: 0px; width: 68px; height: 68px; background: #2B1E42; }
-.cloudOutline3 { left: 68px; top: 22px; width: 54px; height: 54px; background: #2B1E42; }
-.cloudOutlineBase { left: 8px; top: 44px; width: 108px; height: 42px; border-radius: 21px; background: #2B1E42; }
-
-.cloudFill1 { left: 3px; top: 29px; width: 52px; height: 52px; background: #FFFFFF; }
-.cloudFill2 { left: 31px; top: 3px; width: 62px; height: 62px; background: #FFFFFF; }
-.cloudFill3 { left: 71px; top: 25px; width: 48px; height: 48px; background: #FFFFFF; }
-.cloudFillBase { left: 11px; top: 47px; width: 102px; height: 36px; border-radius: 18px; background: #FFFFFF; }
-
-.cloudFace {
-  position: absolute;
-  left: 0;
-  top: 40px;
-  width: 124px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.cloudEyes {
-  display: flex;
-  gap: 14px;
-}
-
-.cloudEyes span {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #2B1E42;
-}
-
-.cloudSmile {
-  width: 16px;
-  height: 8px;
-  border-bottom: 3px solid #2B1E42;
-  border-radius: 0 0 16px 16px;
-}
-
-.cloudBlush {
-  position: absolute;
-  width: 9px;
-  height: 5px;
-  border-radius: 50%;
-  background: #E3C7F0;
-}
-
-.cloudBlushLeft { left: 34px; top: 56px; }
-.cloudBlushRight { left: 82px; top: 56px; }
-
-/* ── "hi!" speech bubble ── */
-.bubble {
-  position: absolute;
-  right: 150px;
-  top: 440px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.bubble:hover {
-  animation: bubblePop 0.5s ease-out;
-}
-
-.bubble:hover .bubbleCard {
-  animation-play-state: paused;
-}
-
-.bubbleCard {
-  position: relative;
-  background: #FFFFFF;
-  border: 3px solid #2B1E42;
-  border-radius: 22px;
-  padding: 10px 24px;
-  box-shadow: 0 10px 22px rgba(80, 55, 130, 0.18);
-  animation: floaty2 6s ease-in-out infinite;
-}
-
-.bubbleText {
-  font-family: var(--font-caveat), 'Caveat', cursive;
-  font-weight: 700;
-  font-size: 34px;
-  color: #5D3E8E;
-  line-height: 1;
-}
-
-.bubbleTail {
-  position: absolute;
-  left: 22px;
-  bottom: -12px;
-  width: 18px;
-  height: 18px;
-  background: #FFFFFF;
-  border-right: 3px solid #2B1E42;
-  border-bottom: 3px solid #2B1E42;
-  transform: rotate(55deg) skewX(20deg);
-}
-
 @media (max-width: 900px) {
-  .cloud,
-  .bubble,
   .sparkle {
     display: none;
   }
-}
-
-@keyframes cloudWiggle {
-  0% { transform: scale(1) rotate(0deg); }
-  25% { transform: scale(1.12) rotate(-8deg); }
-  50% { transform: scale(1.12) rotate(6deg); }
-  75% { transform: scale(1.1) rotate(-4deg); }
-  100% { transform: scale(1.08) rotate(0deg); }
-}
-
-@keyframes bubblePop {
-  0% { transform: scale(1) rotate(0deg); }
-  50% { transform: scale(1.18) rotate(-4deg); }
-  100% { transform: scale(1.08) rotate(2deg); }
 }

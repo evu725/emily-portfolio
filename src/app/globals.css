@@ -10,6 +10,10 @@
   --subtitle-color: #6E5E8E;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg);
   min-height: 100vh;
