@@ -19,7 +19,7 @@ export default function Nav() {
         <ul className={styles.navLinks}>
           <li><Link href="/work">work</Link></li>
           <li><button type="button" onClick={() => open("play")}>play</button></li>
-          <li><button type="button" onClick={() => open("blog")}>blog</button></li>
+          <li><Link href="/blog">blog</Link></li>
           <li><Link href="/about">about</Link></li>
         </ul>
       </div>
