@@ -13,13 +13,13 @@ const projects = [
     github: "https://github.com/The-Marcy-Lab-School-Assignments/full-stack-project-remix-evu725",
   },
   {
-    name: "Artly",
-    tags: ["front-end", "html · css · javascript"],
+    name: "Branch",
+    tags: ["full-stack", "python · fastapi · postgres"],
     description:
-      "A lightweight art browser powered by the Art Institute of Chicago's collection, with keyword search to find and explore specific artworks.",
-    image: "/projects/artly.png",
-    live: "https://solea-emily-mls.github.io/mod-4-project/",
-    github: "https://github.com/solea-emily-mls/mod-4-project",
+      "A community-building app that helps people discover local events, RSVP, and verify attendance in person via QR check-in, with AI-powered event matchmaking and per-neighborhood leaderboards.",
+    image: "/projects/branch.png",
+    live: "https://branch-ql0d.onrender.com",
+    github: "https://github.com/C-Z-G-E-Team-5-AI-Applied-Residency/Branch-Community-Builder",
   },
 ];
 
