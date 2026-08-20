@@ -14,20 +14,17 @@ export default function AboutPage() {
         </header>
 
         <p className={styles.bio}>
-          Hey! I&rsquo;m Emily, a software engineer based in NYC, currently a Fellow
-          at <a href="https://www.marcylabschool.org" target="_blank" rel="noopener noreferrer">The Marcy Lab School</a>.
+          Hey! I&rsquo;m Emily, a full-stack developer based in NJ (NYC area).
           I love building full-stack products with clean, intuitive interfaces and a focus on creating
           software people genuinely enjoy using. Always learning, always
-          building something. Interested in software engineering, full-stack development,
-          and backend engineering roles.
+          building something. Looking for internships and entry-level roles in software engineering, full-stack, or backend development.
         </p>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>recently</h2>
           <ul className={styles.list}>
-            <li>finishing up my Software Engineer Fellowship at The Marcy Lab School</li>
-            <li>open to entry-level & new-grad opportunities &mdash;{" "}
-              <a href="mailto:evu725@gmail.com">reach out!</a>
+            <li>graduated from my Software Engineering Fellowship at{" "}
+              <a href="https://www.marcylabschool.org" target="_blank" rel="noopener noreferrer">The Marcy Lab School</a>
             </li>
             <li>see what I&rsquo;ve been <a href="/work">building →</a></li>
           </ul>
@@ -41,7 +38,7 @@ export default function AboutPage() {
           </p>
           <p className={styles.currentItem}>
             <span className={styles.currentLabel}>listening to</span>
-            505 - Arctic Monkeys
+            odoriko - Vaundy
           </p>
           <p className={styles.currentItem}>
             <span className={styles.currentLabel}>learning</span>
