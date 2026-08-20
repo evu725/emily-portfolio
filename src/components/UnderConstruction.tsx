@@ -39,7 +39,7 @@ export function UnderConstructionProvider({ children }: { children: React.ReactN
         <div className={styles.overlay} role="dialog" aria-modal="true">
           <div className={styles.card} ref={cardRef}>
             <div className={styles.sparkle}>✦</div>
-            <div className={styles.heading}>under construction — check back soon!</div>
+            <div className={styles.heading}>under construction, check back soon!</div>
             <div className={styles.sub}>
               {label ? `"${label}" isn't ready yet, but it's on the way.` : "This part of the site isn't ready yet, but it's on the way."}
             </div>

@@ -34,7 +34,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Emily Vu — Full-Stack Developer",
+  title: "Emily Vu · Full-Stack Developer",
   description: "Full-stack developer crafting clean, thoughtful digital experiences.",
 };
 

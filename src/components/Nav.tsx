@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navInner}>
-        <Link href="/" className={styles.logoWrap} aria-label="Emily Vu — home">
+        <Link href="/" className={styles.logoWrap} aria-label="Emily Vu home">
           <div className={styles.logo}>✦</div>
           <div className={styles.logoSparkle}>✦</div>
           <div className={styles.logoDot}></div>

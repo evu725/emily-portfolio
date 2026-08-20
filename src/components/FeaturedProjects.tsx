@@ -36,13 +36,13 @@ export default function FeaturedProjects() {
     <section id="featured-projects" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <div className={styles.eyebrow}>01 — SELECTED WORKS</div>
+          <div className={styles.eyebrow}>01 · SELECTED WORKS</div>
           <div className={styles.headingRow}>
             <h2 className={styles.heading}>featured projects</h2>
             <span className={styles.headingSparkle} aria-hidden="true">✦</span>
           </div>
           <p className={styles.subtitle}>
-            things I&rsquo;ve built from the ground up — full-stack, back-end, and design.
+            things I&rsquo;ve built from the ground up: full-stack, back-end, and design.
           </p>
         </div>
 
